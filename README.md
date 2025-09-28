@@ -9,14 +9,14 @@ FEATURES:
 - Optional balance trend visualization.
 - Extensible to additional banks by adding custom parsers.
 
-TECH STACK:
--🐍 Python 3.x
--📊 Pandas – DataFrame operations
--📑 pdfplumber / PyPDF2 – PDF text & table extraction
--🧠 Custom Parsing Logic – Bank-specific table parsing
--🖥️ Streamlit – Web UI
--📈 Matplotlib / Plotly – Visualization
-
+TECH STACK:  
+-🐍 Python 3.x  
+-📊 Pandas – DataFrame operations  
+-📑 pdfplumber / PyPDF2 – PDF text & table extraction  
+-🧠 Custom Parsing Logic – Bank-specific table parsing   
+-🖥️ Streamlit – Web UI  
+-📈 Matplotlib / Plotly – Visualization  
+  
 THE AGENT WORKS IN 5 STEPS:
 1. Bank Selection & File Upload: User selects the bank and uploads a PDF statement via the Streamlit interface.  
 2. Parser Dispatch: The agent routes the PDF to the corresponding parser (`icici_parser` or `sbi_parser`).  
