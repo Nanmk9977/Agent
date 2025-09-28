@@ -9,6 +9,14 @@ FEATURES:
 - Optional balance trend visualization.
 - Extensible to additional banks by adding custom parsers.
 
+TECH STACK:
+🐍 Python 3.x
+📊 Pandas – DataFrame operations
+📑 pdfplumber / PyPDF2 – PDF text & table extraction
+🧠 Custom Parsing Logic – Bank-specific table parsing
+🖥️ Streamlit – Web UI
+📈 Matplotlib / Plotly – Visualization
+
 THE AGENT WORKS IN 5 STEPS:
 1. Bank Selection & File Upload: User selects the bank and uploads a PDF statement via the Streamlit interface.  
 2. Parser Dispatch: The agent routes the PDF to the corresponding parser (`icici_parser` or `sbi_parser`).  
@@ -19,14 +27,5 @@ THE AGENT WORKS IN 5 STEPS:
 FLOW OF DIAGRAM:
 <img width="987" height="316" alt="image" src="https://github.com/user-attachments/assets/cc9e87c6-1d15-4bdf-a2b2-388c279fd390" />
 
-STRUCTURE:
-AI_CHALLENGE/
-├── icici/
-│   ├── icici_parser.pdf
-│   ├── icici_parser.csv
-├── custom_parser/
-│   ├── icici_parser.py
-├── agent.py               
-├── requirements.txt
-├── README.md
+
 
